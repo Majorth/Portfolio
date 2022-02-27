@@ -1,0 +1,127 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Raleway, sans-serif;
+}
+*, *::after,*::before{
+    box-sizing: inherit;
+}
+#navbar{
+    display: flex;
+    height:100px;
+    width: 100%;
+    justify-content: space-around;
+    padding: 25px 0;
+    padding-left: 30%;
+    gap: 100px;
+    list-style-type: none;
+    
+    position: fixed;
+    background-color: #1f2937;
+   
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    gap:80px;
+    font-size: 2rem;
+   
+}
+a {
+    text-decoration: none;
+    color:black;
+   
+}
+.nav-link{
+    color: white;
+}
+#welcome-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-color: #3882f6;
+
+}
+h1{
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+p{
+    font-size: 2rem;
+}
+#projects{
+    display: flex;
+    text-align: center;
+    height: 1000px;
+    background-color: #e5e7eb;
+    flex-direction: column;
+    padding: 40px;
+    
+}
+
+.project-grid{
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1.5fr;
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+.project-image{
+    height: 325px;
+    width:100%;
+    object-fit:fill;
+}
+img{
+    display: block;
+}
+.project-title{
+    background-color: darkgray;
+    font-size: 1.5rem;
+}
+.btn-show-all{
+    font-size: 2rem;
+    background-color: darkgray;
+    width: 200px;
+    margin: 0 auto;
+    border-radius: 20px;
+
+}
+#contact{
+    display: flex;
+    height: 400px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3882f6;
+}
+.contact-links{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+    max-width: 980px;
+    gap: 80px;
+}
+.contact-details {
+    font-size: 2rem;
+    transition: transform 0.3s ease-out;
+}
+.btn{
+    display: inline-block;
+    padding:1rem 2rem;
+    border-radius: 2px;
+    text-shadow: 2px 2px 1px #1f1f1f1f;
+    transition: transform 0.3s ease-out;
+}
+.btn:hover{
+    box-shadow: inset 100px 0 0 0 #1f1f1f1f;
+    color: white;
+}
